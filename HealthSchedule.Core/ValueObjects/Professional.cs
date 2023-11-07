@@ -1,16 +1,15 @@
 ﻿namespace HealthSchedule.Core.ValueObjects;
 
-public class Professional
+public class Professional : People
 {
-
     public Professional(
-        long id, 
-        String name)
+        String cpf, 
+        String name,
+        DateTime birthday,
+        String role
+    ) : base (cpf, name, birthday)
     {
-        Id = id;
-        Name = name;
+        Role = role;
     }
-
-    public long Id { get; set; }
-    public String Name { get; set; }
+    public String Role { get; set; }
 }
