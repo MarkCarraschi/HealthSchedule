@@ -1,0 +1,29 @@
+﻿using HealthSchedule.Core.ValueObjects.Location;
+namespace HealthSchedule.Core.ValueObjects.Location;
+
+public class Location : ValueObject
+{
+
+    public Location(
+        String city, 
+        State state,
+        String street,
+        String neighborhood,
+        int zipCode,
+        int number) 
+    {
+        City = city;
+        State = state;
+        Street = street;
+        Neighborhood = neighborhood;
+        ZipCode = zipCode;
+        Number = number;
+    }
+
+    public String City { get; set; }
+    public State State { get; set; }
+    public String Street { get; set; }
+    public String Neighborhood { get; set; }
+    public int ZipCode { get; set; }
+    public int Number { get; set; }
+}
