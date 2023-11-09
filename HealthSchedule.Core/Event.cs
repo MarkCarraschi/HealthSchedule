@@ -14,6 +14,8 @@ public class Event
         Schedule = schedule;
         Professional = professional;
         Patient = patient;
+
+        InvalidEventException.ThrowPatientBeingAssignedProfessional(patient, professional);
     }
 
     public Guid Id { get; set; }
