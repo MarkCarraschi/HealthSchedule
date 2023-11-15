@@ -28,14 +28,8 @@ public partial class InvalidScheduleException : Exception
         if(unavailableSchedule)
             throw new InvalidScheduleException(UnavailableScheduleErrorMessage);
 
-    }    
+    }
 
-    /// <summary>
-    /// Throw an exception if the end time is greater than the start time.
-    /// </summary>
-    /// <param name="startTime">start time</param>
-    /// <param name="endTime">end time</param>
-    /// <exception cref="InvalidScheduleException"></exception>
     public static void ThrowEndTimeGreatThanStartTime(DateTime startTime, DateTime endTime)
     {
         if(endTime < startTime)
