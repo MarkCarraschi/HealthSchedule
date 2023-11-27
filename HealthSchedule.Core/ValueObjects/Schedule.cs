@@ -20,11 +20,17 @@ public class Schedule : ValueObject
         Duration = duration;
         DayOfWeek = dayOfWeek;
         Model = model;
-
-        InvalidScheduleException.ThrowEndTimeGreatThanStartTime(startTime, EndTime);
+        EndTime = SetEndTime(Duration);
+        
+        InvalidScheduleException.ThrowEndTimeGreatThanStartTime(StartTime, EndTime);
         //InvalidScheduleException.ThrowUnavailableSchedule(startTime, EndTime);
-    }    
+    }
     
+    public DateTime SetEndTime(decimal duration)
+    {
+        return StartTime.AddHours((double) duration);
+    }
+
     /// <summary>
     /// Start time of schedule
     /// </summary>
