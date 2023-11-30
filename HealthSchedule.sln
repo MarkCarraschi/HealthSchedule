@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthSchedule.Core", "HealthSchedule.Core\HealthSchedule.Core.csproj", "{88545E69-0D8C-44E0-A571-89F23B09044D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthSchedule.Tests", "HealthSchedule.Tests\HealthSchedule.Tests.csproj", "{6EF6C3CF-8F97-4EF0-B153-3B704B6B2E84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{88545E69-0D8C-44E0-A571-89F23B09044D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88545E69-0D8C-44E0-A571-89F23B09044D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88545E69-0D8C-44E0-A571-89F23B09044D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EF6C3CF-8F97-4EF0-B153-3B704B6B2E84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EF6C3CF-8F97-4EF0-B153-3B704B6B2E84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EF6C3CF-8F97-4EF0-B153-3B704B6B2E84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EF6C3CF-8F97-4EF0-B153-3B704B6B2E84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

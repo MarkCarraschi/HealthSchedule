@@ -2,7 +2,7 @@
 
 namespace HealthSchedule.Core.ValueObjects.Location;
 
-public enum State
+public enum EState
 {
     [Description("Acre")]
     AC,
