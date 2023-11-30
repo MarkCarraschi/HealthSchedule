@@ -6,7 +6,7 @@ public class Location : ValueObject
 
     public Location(
         String city, 
-        State state,
+        EState state,
         String street,
         String neighborhood,
         int zipCode,
@@ -21,7 +21,7 @@ public class Location : ValueObject
     }
 
     public String City { get; set; }
-    public State State { get; set; }
+    public EState State { get; set; }
     public String Street { get; set; }
     public String Neighborhood { get; set; }
     public int ZipCode { get; set; }

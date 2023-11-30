@@ -1,4 +1,6 @@
-﻿namespace HealthSchedule.Core.ValueObjects;
+﻿using HealthSchedule.Core.ValueObjects;
+
+namespace HealthSchedule.Core;
 
 public class Patient : People
 {

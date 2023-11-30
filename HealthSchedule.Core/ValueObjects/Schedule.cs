@@ -11,7 +11,7 @@ public class Schedule : ValueObject
     /// <param name="model">Type of provision (e.g. Presential, Remote)</param>
     public Schedule(
         DateTime startTime,
-        decimal duration,
+        float duration,
         DayOfWeek dayOfWeek,
         Model model
     )
@@ -20,11 +20,17 @@ public class Schedule : ValueObject
         Duration = duration;
         DayOfWeek = dayOfWeek;
         Model = model;
-
-        InvalidScheduleException.ThrowEndTimeGreatThanStartTime(startTime, EndTime);
+        EndTime = SetEndTime(Duration);
+        
+        InvalidScheduleException.ThrowEndTimeGreatThanStartTime(StartTime, EndTime);
         //InvalidScheduleException.ThrowUnavailableSchedule(startTime, EndTime);
-    }    
+    }
     
+    public DateTime SetEndTime(float duration)
+    {
+        return StartTime.AddHours(duration);
+    }
+
     /// <summary>
     /// Start time of schedule
     /// </summary>
@@ -38,7 +44,7 @@ public class Schedule : ValueObject
     /// <summary>
     /// Duration of service
     /// </summary>
-    public decimal Duration { get; set; }
+    public float Duration { get; set; }
 
     /// <summary>
     /// Day of frequency
