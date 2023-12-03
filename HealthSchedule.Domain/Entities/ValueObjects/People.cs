@@ -1,4 +1,4 @@
-﻿namespace HealthSchedule.Core.ValueObjects;
+﻿namespace HealthSchedule.Domain.Entities.ValueObjects;
 
 public abstract class People : ValueObject
 {   

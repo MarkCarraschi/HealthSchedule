@@ -1,4 +1,4 @@
-﻿namespace HealthSchedule.Core.ValueObjects;
+﻿namespace HealthSchedule.Domain.Entities.ValueObjects.Exceptions;
 
 public class InvalidEventException : Exception
 {

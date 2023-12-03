@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace HealthSchedule.Core;
+namespace HealthSchedule.Domain.Entities.ValueObjects;
 
 public enum Model
 {

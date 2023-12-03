@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace HealthSchedule.Core.ValueObjects.Location;
+namespace HealthSchedule.Domain.Entities.ValueObjects.Location;
 
 public enum EState
 {
