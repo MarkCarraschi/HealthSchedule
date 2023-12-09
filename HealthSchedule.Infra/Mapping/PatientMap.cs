@@ -3,11 +3,12 @@ using HealthSchedule.Domain.Entities.ValueObjects;
 
 namespace HealthSchedule.Infra.Mapping;
 
-public class PeopleMap : EntityTypeConfiguration<People>
+public class PatientMap : EntityTypeConfiguration<Patient>
 {
-    public PeopleMap()
+    //
+    public PatientMap()
     {
-        ToTable("People");
+        ToTable("Patient");
         HasKey(x => x.Cpf).Property(x => x.Cpf).HasMaxLength(11).IsRequired();
         Property(x => x.Name).HasMaxLength(60).IsRequired();
         Property(x => x.Birthday).IsRequired();

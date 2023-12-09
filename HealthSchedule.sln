@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthSchedule.Tests", "Hea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthSchedule.Infra", "HealthSchedule.Infra\HealthSchedule.Infra.csproj", "{BE670A87-CF48-42A0-9AAF-214A751E8BAA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthSchedule.WebApi", "HealthSchedule.WebApi\HealthSchedule.WebApi.csproj", "{EE5D6E80-9A59-4857-8F4A-75131FBE0117}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthSchedule.Application", "HealthSchedule.Application\HealthSchedule.Application.csproj", "{6BD43486-198D-4F2B-8420-448C5ABD7B7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{BE670A87-CF48-42A0-9AAF-214A751E8BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE670A87-CF48-42A0-9AAF-214A751E8BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE670A87-CF48-42A0-9AAF-214A751E8BAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE5D6E80-9A59-4857-8F4A-75131FBE0117}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE5D6E80-9A59-4857-8F4A-75131FBE0117}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE5D6E80-9A59-4857-8F4A-75131FBE0117}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE5D6E80-9A59-4857-8F4A-75131FBE0117}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BD43486-198D-4F2B-8420-448C5ABD7B7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BD43486-198D-4F2B-8420-448C5ABD7B7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BD43486-198D-4F2B-8420-448C5ABD7B7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BD43486-198D-4F2B-8420-448C5ABD7B7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
