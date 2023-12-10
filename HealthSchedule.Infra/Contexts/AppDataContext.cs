@@ -1,5 +1,4 @@
-﻿//using System.Data.Entity;
-using HealthSchedule.Domain.Entities.ValueObjects;
+﻿using HealthSchedule.Domain.Entities.ValueObjects;
 using HealthSchedule.Infra.Mapping;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,8 +12,9 @@ public class AppDataContext : DbContext
     {
     }    
     public DbSet<Patient> Patients { get; set; }
-    /*protected override void OnModelCreating(DbModelBuilder modelBuilder)
+    
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Configurations.Add(new PeopleMap());
-    }*/
+        new PatientMap().Configure(modelBuilder.Entity<Patient>());
+    }
 }

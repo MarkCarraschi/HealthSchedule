@@ -1,21 +1,23 @@
+using HealthSchedule.Application;
+using HealthSchedule.Domain;
+using HealthSchedule.Domain.Repositories;
 using HealthSchedule.Infra.Contexts;
+using HealthSchedule.Infra.Repositories;
 using Microsoft.EntityFrameworkCore;
-using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-//
-builder.Services.AddDbContext<AppDataContext>(opt => opt.UseInMemoryDatabase("Database"));
 
 /*var connectionString = builder.Configuration.GetConnectionString("connectionString");
 builder.Services.AddDbContext<AppDataContext>(x => x.UseSqlServer(connectionString));*/
+builder.Services.AddDbContext<AppDataContext>(opt => opt.UseInMemoryDatabase("Database"));
+builder.Services.AddTransient<IPatientRepository, PatientRepository>();
+builder.Services.AddTransient<IPatientService, PatientService>();
+builder.Services.AddScoped<AppDataContext, AppDataContext>();
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 

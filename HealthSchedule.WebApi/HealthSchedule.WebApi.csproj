@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HealthSchedule.Infra\HealthSchedule.Infra.csproj" />
+    <ProjectReference Include="..\HealthSchedule.Application\HealthSchedule.Application.csproj" />
   </ItemGroup>
 
 </Project>

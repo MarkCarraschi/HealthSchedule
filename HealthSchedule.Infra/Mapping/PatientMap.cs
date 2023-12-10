@@ -1,16 +1,18 @@
-﻿using System.Data.Entity.ModelConfiguration;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using HealthSchedule.Domain.Entities.ValueObjects;
 
 namespace HealthSchedule.Infra.Mapping;
 
-public class PatientMap : EntityTypeConfiguration<Patient>
+public class PatientMap : IEntityTypeConfiguration<Patient>
 {
-    //
-    public PatientMap()
+
+    public void Configure(EntityTypeBuilder<Patient> builder)
     {
-        ToTable("Patient");
-        HasKey(x => x.Cpf).Property(x => x.Cpf).HasMaxLength(11).IsRequired();
-        Property(x => x.Name).HasMaxLength(60).IsRequired();
-        Property(x => x.Birthday).IsRequired();
+        builder.ToTable("Patient");
+        builder.HasKey(x => x.Cpf);
+        builder.Property(x => x.Cpf).HasMaxLength(11).IsRequired();
+        builder.Property(x => x.Name).HasMaxLength(60).IsRequired();
+        builder.Property(x => x.Birthday).IsRequired();
     }
 }

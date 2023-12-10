@@ -7,7 +7,7 @@ public class PatientService : IPatientService
 {
     private readonly IPatientRepository _patientRepository;
 
-    PatientService(IPatientRepository patientRepository)
+    public PatientService(IPatientRepository patientRepository)
     {
         _patientRepository = patientRepository;
     }
