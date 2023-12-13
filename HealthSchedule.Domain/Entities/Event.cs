@@ -1,5 +1,7 @@
-﻿using HealthSchedule.Core.ValueObjects;
-namespace HealthSchedule.Core;
+﻿using HealthSchedule.Domain.Entities.ValueObjects;
+using HealthSchedule.Domain.Entities.ValueObjects.Exceptions;
+
+namespace HealthSchedule.Domain.Entities;
 
 public class Event
 {

@@ -1,4 +1,6 @@
-﻿namespace HealthSchedule.Core.ValueObjects;
+﻿using HealthSchedule.Domain.Entities.ValueObjects.Exceptions;
+
+namespace HealthSchedule.Domain.Entities.ValueObjects;
 
 public class Schedule : ValueObject
 {
