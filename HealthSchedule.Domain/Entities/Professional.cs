@@ -1,6 +1,4 @@
-﻿using HealthSchedule.Core.ValueObjects;
-
-namespace HealthSchedule.Core;
+﻿namespace HealthSchedule.Domain.Entities.ValueObjects;
 
 public class Professional : People
 {

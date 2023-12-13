@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HealthSchedule.Core\HealthSchedule.Core.csproj" />
+    <ProjectReference Include="../HealthSchedule.Domain/HealthSchedule.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,5 +1,4 @@
-﻿using HealthSchedule.Core.ValueObjects.Location;
-namespace HealthSchedule.Core.ValueObjects.Location;
+﻿namespace HealthSchedule.Domain.Entities.ValueObjects.Location;
 
 public class Location : ValueObject
 {

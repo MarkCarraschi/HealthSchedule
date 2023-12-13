@@ -3,17 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthSchedule.Core", "HealthSchedule.Core\HealthSchedule.Core.csproj", "{88545E69-0D8C-44E0-A571-89F23B09044D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthSchedule.Domain", "HealthSchedule.Domain\HealthSchedule.Domain.csproj", "{88545E69-0D8C-44E0-A571-89F23B09044D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthSchedule.Tests", "HealthSchedule.Tests\HealthSchedule.Tests.csproj", "{6EF6C3CF-8F97-4EF0-B153-3B704B6B2E84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthSchedule.Infra", "HealthSchedule.Infra\HealthSchedule.Infra.csproj", "{BE670A87-CF48-42A0-9AAF-214A751E8BAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthSchedule.WebApi", "HealthSchedule.WebApi\HealthSchedule.WebApi.csproj", "{EE5D6E80-9A59-4857-8F4A-75131FBE0117}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthSchedule.Application", "HealthSchedule.Application\HealthSchedule.Application.csproj", "{6BD43486-198D-4F2B-8420-448C5ABD7B7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{88545E69-0D8C-44E0-A571-89F23B09044D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -24,5 +27,20 @@ Global
 		{6EF6C3CF-8F97-4EF0-B153-3B704B6B2E84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EF6C3CF-8F97-4EF0-B153-3B704B6B2E84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EF6C3CF-8F97-4EF0-B153-3B704B6B2E84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE670A87-CF48-42A0-9AAF-214A751E8BAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE670A87-CF48-42A0-9AAF-214A751E8BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE670A87-CF48-42A0-9AAF-214A751E8BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE670A87-CF48-42A0-9AAF-214A751E8BAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE5D6E80-9A59-4857-8F4A-75131FBE0117}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE5D6E80-9A59-4857-8F4A-75131FBE0117}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE5D6E80-9A59-4857-8F4A-75131FBE0117}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE5D6E80-9A59-4857-8F4A-75131FBE0117}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BD43486-198D-4F2B-8420-448C5ABD7B7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BD43486-198D-4F2B-8420-448C5ABD7B7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BD43486-198D-4F2B-8420-448C5ABD7B7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BD43486-198D-4F2B-8420-448C5ABD7B7A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

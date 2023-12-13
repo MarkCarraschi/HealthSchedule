@@ -1,5 +1,6 @@
-using HealthSchedule.Core;
-using HealthSchedule.Core.ValueObjects;
+using HealthSchedule.Domain.Entities;
+using HealthSchedule.Domain.Entities.ValueObjects;
+using HealthSchedule.Domain.Entities.ValueObjects.Exceptions;
 
 namespace HealthSchedule.Tests;
 
