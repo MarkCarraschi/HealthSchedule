@@ -1,6 +1,8 @@
 using HealthSchedule.Application;
 using HealthSchedule.Domain;
 using HealthSchedule.Domain.Repositories;
+using HealthSchedule.Domain.Services;
+using HealthSchedule.Infra;
 using HealthSchedule.Infra.Contexts;
 using HealthSchedule.Infra.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -13,7 +15,9 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<AppDataContext>(x => x.UseSqlServer(connectionString));*/
 builder.Services.AddDbContext<AppDataContext>(opt => opt.UseInMemoryDatabase("Database"));
 builder.Services.AddTransient<IPatientRepository, PatientRepository>();
+builder.Services.AddTransient<IEventRepository, EventRepository>();
 builder.Services.AddTransient<IPatientService, PatientService>();
+builder.Services.AddTransient<IEventService, EventService>();
 builder.Services.AddScoped<AppDataContext, AppDataContext>();
 
 builder.Services.AddEndpointsApiExplorer();
