@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: health-schedule-api
+    env: docker
+    plan: free
+    region: oregon # Altere conforme sua preferência (us-west, us-east, eu-west, etc)
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: ASPNETCORE_URLS
+        value: http://+:8080
+    
+    # Configuração para banco de dados SQL Server (opcional)
+    # Descomente e configure as variáveis abaixo se usar SQL Server
+    # - key: ConnectionString
+    #   fromDatabase:
+    #     name: health-schedule-db
+    #     property: connectionString
+
+# Exemplo de banco de dados PostgreSQL (recomendado para Render)
+# databases:
+#   - name: health-schedule-db
+#     plan: free
+#     region: oregon

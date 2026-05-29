@@ -1,0 +1,45 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Build outputs
+bin/
+obj/
+*/bin/
+*/obj/
+
+# IDE
+.vs/
+.vscode/
+*.sln.iml
+*.user
+*.rsuser
+*.suo
+*.sln.iml
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# NuGet
+*.nupkg
+*.snupkg
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+
+# Tests
+HealthSchedule.Tests/
+
+# Other
+.env
+.env.local
+docker-compose.yml
+.dockerignore
+Dockerfile
+README.md
+LICENSE
