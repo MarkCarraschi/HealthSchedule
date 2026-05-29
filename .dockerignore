@@ -32,9 +32,6 @@ Thumbs.db
 .gitlab-ci.yml
 .travis.yml
 
-# Tests
-HealthSchedule.Tests/
-
 # Other
 .env
 .env.local
